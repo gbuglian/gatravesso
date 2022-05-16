@@ -1,0 +1,18 @@
+body{
+    display: block;
+}
+
+#sobre img{
+    max-width: 300px;
+    padding: 8px 37px
+}
+
+#sobre p{
+    padding: 8px 37px;
+    font-size: 22px;
+}
+
+#info_gatos{
+    margin-left: 54px;
+    font-size: 22px;
+}

@@ -1,35 +1,26 @@
-body{
-    display: block;
+body {
+  display: block;
 }
 
-#subtitle{
-    font-size: 15px;
-    padding: 0px 141px;
-    margin-top: 6px;
+#subtitle {
+  font-size: 15px;
+  padding: 0px 141px;
+  margin-top: 6px;
 }
 
-
-#apoie{
-    padding: 5px 56px 0;
+#apoie li {
+  list-style: none;
+  padding: 4px 0;
 }
 
-#apoie li{
-    list-style: none;
-    padding: 4px 0;
+#apoie p {
+  margin-top: -17px;
 }
 
-#apoie p{
-    margin-top: -17px;
+main h1 {
+  font-size: 30px;
 }
 
-
-main h1{
-    font-size: 30px;
-    margin: 10px 150px 0px;
-}
-
-main h3{
-    font-size: 15px;
-    padding: 0px 141px;
-    margin-top: 6px;
+main h3 {
+  font-size: 15px;
 }

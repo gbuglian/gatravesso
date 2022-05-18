@@ -2,17 +2,26 @@ body{
     display: block;
 }
 
-#sobre img{
-    max-width: 300px;
-    padding: 8px 37px
+.sobre p{
+    padding: 1em 1em;
+    font-size: 26px;
 }
 
-#sobre p{
-    padding: 8px 37px;
+.info_gatos{
+    margin-left: 2.3em;
     font-size: 22px;
 }
 
-#info_gatos{
-    margin-left: 54px;
-    font-size: 22px;
+.tipografia{
+    text-align: center;
+}
+
+.tipografia h1{
+    padding : 10px 0px 0px 5px;
+}
+
+.tipografia img{
+   max-width: 90%;
+   width: auto;
+   height: auto;
 }

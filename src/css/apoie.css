@@ -2,25 +2,42 @@ body {
   display: block;
 }
 
-#subtitle {
-  font-size: 15px;
-  padding: 0px 141px;
-  margin-top: 6px;
-}
-
-#apoie li {
+.apoie li {
   list-style: none;
   padding: 4px 0;
 }
 
-#apoie p {
-  margin-top: -17px;
+.apoie ul li {
+  padding: 3em 0 0.5em 1em;
+}
+
+.apoie p {
+  padding-top: 0.3em;
 }
 
 main h1 {
   font-size: 30px;
 }
 
-main h3 {
-  font-size: 15px;
+.apoie ul li h4{
+  color: #9100ff;
 }
+
+.header {
+  text-align: center;
+  padding: 1em 0em 1em 0em;
+}
+
+.apoie{
+  background-color: oldlace;
+  padding-bottom: 10em;
+}
+
+.apoie .lojas_parceiras  {
+  text-align: center;
+}
+
+.apoie .lojas_parceiras img{
+  max-width: 20%;
+}
+

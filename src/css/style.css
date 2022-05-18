@@ -44,6 +44,7 @@ a:hover {
 #menu a {
   display: block;
   padding: 0.5rem;
+  color: black;
 }
 
 #btn_mobile {
@@ -114,10 +115,9 @@ a:hover {
   }
 
   #nav.active #menu {
-    /* display: block; */
-    height: calc(100vh - 70px);
+    height: calc(100% - 70px);
     visibility: visible;
-    overflow-y: auto;
+    overflow-y: auto;    
   }
 
   #menu a {
@@ -177,5 +177,24 @@ a:hover {
     padding: 16px 87px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 600px) {
+
+
+  .pet .btn_saibaMais{
+    margin-top: 95%;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 991px){
+  .pet .btn_saibaMais{
+    margin-top: 92%;
+  }
+
+  .pet img {
+    margin-bottom: 1em;
   }
 }

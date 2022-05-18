@@ -1,0 +1,88 @@
+body {
+    background-color: #dcad77 !important;
+}
+
+form{
+    background-color: white;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form h3{
+    text-align: center;
+    color: #dcad77;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+form input[type="text"], 
+form input[type="password"]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #dcad77;
+    opacity: 0.5;
+    color: black;
+    border: 0;
+    border-radius: 20px;
+}
+
+form input[type="submit"]:hover{
+    opacity: 1;
+}
+
+
+form input[type="text"]:focus , form input[type="password"]:focus{
+    outline:0;
+}
+
+#input_email{
+    background-image: url("../assets/correspondencia.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 2%;
+    background-size: 1.3em;
+    padding-left: 2.5em;
+}
+
+#input_password{
+    background-image: url("../assets/cadeado-seguro.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 2%;
+    background-size: 1.3em;
+    padding-left: 2.5em;
+}
+
+
+#btn_guest{
+    margin-top: 10px;
+    background-color: #ccc;
+    opacity: 0.5;
+    text-align: center;
+    padding: 7px;
+    border-radius: 1.5em;
+}
+
+#btn_guest:hover{
+    opacity: 1;
+}
+
+#btn_guest a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 0em;
+}

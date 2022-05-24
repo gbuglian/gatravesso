@@ -30,7 +30,8 @@ main h1 {
 
 .apoie{
   background-color: oldlace;
-  padding-bottom: 10em;
+  padding-bottom: 8em;
+  margin-bottom: 5em;
 }
 
 .apoie .lojas_parceiras  {
@@ -41,3 +42,6 @@ main h1 {
   max-width: 20%;
 }
 
+.apoie .lojas_parceiras a:hover{
+  background-color: oldlace !important;
+}

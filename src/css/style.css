@@ -198,3 +198,14 @@ a:hover {
     margin-bottom: 1em;
   }
 }
+
+@media (min-width: 991px){
+
+  .pet img {
+    margin-bottom: 1em;
+  }
+}
+
+.redes_sociais ul li a {
+  color: black;
+}

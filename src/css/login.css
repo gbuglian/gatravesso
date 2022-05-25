@@ -20,8 +20,8 @@ body {
 }
 
 
-.card_entrar input[type="text"], 
-.card_entrar input[type="password"]{
+.card_entrar .email input[type="text"], 
+.card_entrar .password input[type="password"]{
     width: 100%;
     height: 45px;
     border: 1px solid #ccc;
@@ -44,8 +44,8 @@ body {
 }
 
 
-.card_entrar input[type="text"]:focus ,
-.card_entrar input[type="password"]:focus{
+.card_entrar .email input[type="text"]:focus ,
+.card_entrar .password input[type="password"]:focus{
     outline:0;
 }
 

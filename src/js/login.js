@@ -10,7 +10,7 @@ let btnSend = document.querySelector('#btnSend');
 let msgErro = document.querySelector('#msg_erro');
 
 function validarSenha(url ="", data = {}) {
-
+    showLoading();
     fetch(url, { 
 
         method: 'POST',
@@ -25,45 +25,52 @@ function validarSenha(url ="", data = {}) {
         body: JSON.stringify(data)
 
     }).then(function(response) {
+        hideLoading();
 
         if (response.status == 401) {
-            msgErro.setAttribute('style', 'display:block');
-            msgErro.innerHTML = 'Usuário não cadastrado'
+            msgErro.setAttribute('style', 'color: red; display:block');
+            msgErro.innerHTML = 'Usuário inválido'
+        }
+        if (response.status == 200) {
+            msgErro.setAttribute('style', 'color: green; display:block')
+            msgErro.innerHTML = 'Usuário Autenticado'
         }
 
     }).catch(function(error){
         console.error(error.message);
+        msgErro.setAttribute('style', 'color: red; display:block')
+        msgErro.innerHTML = 'Erro, contate o administrador'
+        hideLoading();
     })
 } 
 
 function entrar() {
     if(validEmail && validPassword) {
-      msgErro.innerHTML = '';
+        msgErro.innerHTML = ''; 
         validarSenha('http://localhost:8081/gatravesso/v1/validarSenha', 
             {
                 usuario: document.querySelector("#input_email").value, 
                 senha: document.querySelector("#input_password").value
             })
     } else{
-        msgErro.setAttribute('style', 'color: red');
-        msgErro.setAttribute('style', 'display:block');
+        msgErro.setAttribute('style', 'color: red; display:block');
         msgErro.innerHTML = 'Preencha todos os campos corretamente e tente novamente'
     }
 }
 
 email.addEventListener('keyup', () => {
-    if (email.value.length < 6) {
-        email.setAttribute('style', 'color: red');
-        email.setAttribute('style', 'border: 1px red solid');
-        labelEmail.setAttribute('style', 'color: red');
-        labelEmail.innerHTML = '*Insira no minimo 6 caracteres'  
-        validEmail = false
-    } else {
-        email.setAttribute('style', 'color: black');
-        email.setAttribute('style', 'border: 1px green solid');
-        labelEmail.innerHTML = ''
-        validEmail = true
-    }
+        if (email.value.length < 6) {
+            email.setAttribute('style', 'color: red');
+            email.setAttribute('style', 'border: 1px red solid');
+            labelEmail.setAttribute('style', 'color: red');
+            labelEmail.innerHTML = '* Usuário no minimo 6 caracteres'  
+            validEmail = false
+        } else {
+            email.setAttribute('style', 'color: black');
+            email.setAttribute('style', 'border: 1px green solid');
+            labelEmail.innerHTML = ''
+            validEmail = true
+        }
 })
 
 password.addEventListener('keyup', () => {
@@ -71,7 +78,7 @@ password.addEventListener('keyup', () => {
          password.setAttribute('style', 'color: red');  
          password.setAttribute('style', 'border: 1px red solid');
          labelPassword.setAttribute('style', 'color: red');
-         labelPassword.innerHTML = '*Insira no minimo 6 caracteres'
+         labelPassword.innerHTML = '* Senha deve possuir no minimo 6 caracteres'
          validPassword = false
     } else {
         password.setAttribute('style', 'border: 1px green solid');

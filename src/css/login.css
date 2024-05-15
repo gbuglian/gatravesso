@@ -1,5 +1,11 @@
 body {
-    background-color: #dcad77 !important;
+    background-image: url(../assets/undraw_cat_epte.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(220, 173, 119) !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .card_entrar{

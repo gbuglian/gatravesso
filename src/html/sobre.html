@@ -6,12 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/sobre.css">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+        />
         <link rel="icon" href="../assets/GATO TRAVESSO 4.png">
-        <title>Gatravesso</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Recanto Gatravesso</title>
     </head>
 
     <header id="header">
-        <a id="logo" href="../index.html"> <img src="../assets/TIPOGRAFIA 1 SEM FUNDO.png" alt="logo_gatravesso"></a>
+        <a id="logo" href="../index.html"> <img src="../assets/GT SEM FUNDO 3.png" alt="logo_gatravesso"></a>
         <nav id="nav">
             <button id="btn_mobile">
 
@@ -21,25 +30,25 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="../index.html">Adote</a></li>
                 <li><a href="./apoie.html">Apoie</a></li>
-                <li><a href="#">Área do Administrator</a></li>
+                <li><a href="./login.html">Área do Administrador</a></li>
             </ul>
         </nav>
         
         <script type="text/javascript" src="../js/script.js"></script>
     </header>
 
-    <!-- <hr> -->
-
     <body>
-        <main>
-            <h1 id="title">SOBRE</h1>
-            <div id="sobre">
-                <img id= "tipografia" src="../assets/TIPOGRAFIA 3.png", alt="sobre_recanto">
-                <p>Eu Aliny , sempre fui apaixonada por animais , em especial pelos Felinos 😻 sempre tive gatos , mas sentia q precisava fazer algo mais por eles ...</p>
+        <main class ="container">
+            <div class="sobre">
+                <div class= "tipografia">
+                    <h1>SOBRE</h1>
+                    <img src="../assets/TIPOGRAFIA 3.png", alt="sobre_recanto">
+                </div>
+                <p>Eu Aliny , sempre fui apaixonada por animais , em especial pelos Felinos 😻 sempre tive gatos , mas sentia que precisava fazer algo mais por eles ...</p>
                 <p>Foi quando resgatamos a primeira família de gatos,  de um telhado em 2015,  de lá pra cá muitos foram chegando e muitos sendo adotados, fomos adaptando a casa e transformando em um abrigo seguro , onde os gatos pudessem ser recuperados , tratados e adotados </p>
                 <p>E então nasceu o RECANTO GATRAVESSOS, nesse tempo já passaram por aqui mais de 600 gatos, atualmente temos 41 gatinhos no abrigo . Gastamos em torno de 60kg de ração por mês,  e 100kg de granulado de madeira</p>
                 <p>Todos os gatinhos são :
-                    <ul id="info_gatos">
+                    <ul class="info_gatos">
                         <li>Castrados</li> 
                         <li>Vermifugados</li>
                         <li>Despulgados </li>
@@ -50,4 +59,39 @@
             </div>
         </main>
     </body>
+    <footer class="footer mt-auto">
+        <section>
+          <div class="info pt-5 row text-center">
+            <div class="col-4 text-right">
+              <img src="../assets/GT SEM FUNDO 1.png" alt="logo Gatravesso" />
+            </div>
+            <div class="col-4">
+              <h3>Redes sociais</h3>
+              <ul>
+                <li>
+                  <a>Facebook</a>
+                </li>
+                <li>
+                  <a>Instagram</a>
+                </li>
+                <li>
+                  <a>Tiktok</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 text-left">
+              <h3>Apoie</h3>
+              <ul>
+                <li>
+                  <a>Seja um doador</a>
+                </li>
+                <li>
+                  <a>Seja um voluntário</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center">© 2021 Recanto Gatravesso. All rights reserved.</p>
+        </section>
+      </footer>
 </html>

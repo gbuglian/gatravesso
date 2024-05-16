@@ -2,25 +2,105 @@ body {
   display: block;
 }
 
-#subtitle {
-  font-size: 15px;
-  padding: 0px 141px;
-  margin-top: 6px;
+.apoie{
+  background-color: oldlace;
+  padding-bottom: 3em;
+  margin-bottom: 2em;
 }
-
-#apoie li {
+.apoie li {
   list-style: none;
   padding: 4px 0;
 }
 
-#apoie p {
-  margin-top: -17px;
+.apoie ul li {
+  padding: 3em 0 0.5em 1em;
 }
 
-main h1 {
-  font-size: 30px;
+.apoie p {
+  padding-top: 0.3em;
 }
 
-main h3 {
-  font-size: 15px;
+
+.header h3{
+  color: #9100ff;
+}
+
+h1, h3, h4, p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.apoie ul li h4{
+  color: #9100ff;
+}
+
+.header {
+  text-align: center;
+  padding: 1em 0em 1em 0em;
+}
+
+table{
+  border-spacing: 0;
+  display: table;
+  width: 100%;
+  border: 0;
+}
+
+tbody{
+  text-align: center;
+}
+
+.lojas img {
+  max-width:220px;
+  height: auto;
+  width: auto;
+  max-height:100px;
+  margin: 30px 0 30px;
+}
+
+@media (min-width: 500px) and (max-width:576px) {
+
+
+  .lojas img {
+    max-width:200px;
+    height: auto;
+    width: auto;
+    max-height:100px;
+    margin: 30px 0 30px;
+  }
+}
+
+@media (min-width: 350px ) and (max-width:500px) {
+
+
+  .lojas img {
+    max-width:130px;
+    height: auto;
+    width: auto;
+    max-height:100px;
+    margin: 30px 0 30px;
+  }
+}
+
+@media (min-width: 320px ) and (max-width:349px) {
+
+
+  .lojas img {
+    max-width:110px;
+    height: auto;
+    width: auto;
+    max-height:100px;
+    margin: 30px 0 30px;
+  }
+}
+
+@media (min-width: 280px ) and (max-width:320px) {
+
+  .lojas img {
+    max-width:90px;
+    height: auto;
+    width: auto;
+    max-height:100px;
+    margin: 30px 0 30px;
+  }
 }

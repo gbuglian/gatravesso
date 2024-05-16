@@ -1,0 +1,132 @@
+body {
+    background-image: url(../assets/undraw_cat_epte.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(220, 173, 119) !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card_entrar{
+    background-color: white;
+    max-width: 500%;
+    width: 50%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_entrar h3{
+    text-align: center;
+    color: #dcad77;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.card_entrar .email input[type="text"], 
+.card_entrar .password input[type="password"]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+#btn_send{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #dcad77;
+    opacity: 0.5;
+    color: black;
+    border: 0;
+    border-radius: 20px;
+}
+
+#btn_send:hover{
+    opacity: 1;
+}
+
+
+.card_entrar .email input[type="text"]:focus ,
+.card_entrar .password input[type="password"]:focus{
+    outline:0;
+}
+
+#input_email{
+    background-image: url("../assets/correspondencia.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 2%;
+    background-size: 1.3em;
+    padding-left: 3em;
+}
+
+#input_password{
+    background-image: url("../assets/cadeado-seguro.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 2%;
+    background-size: 1.3em;
+    padding-left: 3em;
+}
+
+
+#btn_guest{
+    margin-top: 10px;
+    background-color: #ccc;
+    opacity: 0.5;
+    text-align: center;
+    padding: 7px;
+    border-radius: 1.5em;
+}
+
+#btn_guest:hover{
+    opacity: 1;
+}
+
+#btn_guest a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 0em;
+}
+
+#msg_erro{
+    text-align: center;
+    border-radius: 1em;
+    display: none;
+    margin-bottom: 10px;
+}
+
+label{
+    display: inline !important;
+}
+
+.loading{
+    background: rgba(0, 0, 0, 0.10);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+}
+
+.loading .loader{
+    animation: is-rotating 1.5s infinite;
+    width: 30px;
+    height: 30px;
+    border: solid 6px #e5e5e5;
+    border-top-color: #dcad77;
+    border-radius: 50%;
+}
+
+@keyframes is-rotating {
+    to{
+        transform: rotate(1turn);
+    }
+}

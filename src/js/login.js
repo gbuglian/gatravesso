@@ -47,7 +47,7 @@ function validarSenha(url ="", data = {}) {
 function entrar() {
     if(validEmail && validPassword) {
         msgErro.innerHTML = ''; 
-        validarSenha('http://localhost:8081/gatravesso/v1/validarSenha', 
+        validarSenha('https://gatravessoback.netlify.app/gatravesso/v1/validarSenha', 
             {
                 usuario: document.querySelector("#input_email").value, 
                 senha: document.querySelector("#input_password").value
